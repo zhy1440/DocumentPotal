@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ButtonAppBar() {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" fixed="top">
             <Link to="/">
                 <Navbar.Brand>
                     <img
