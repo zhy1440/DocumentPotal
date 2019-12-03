@@ -4,17 +4,25 @@ import { createBrowserHistory } from "history";
 
 import ButtonAppBar from "./ButtonAppBar";
 import routes from "./routes";
+import { Provider } from "react-redux";
+import configureStore from "./redux/store";
+import { loadCats } from './redux/actions/catActions';
 
 var hist = createBrowserHistory();
+
+const store = configureStore();
+store.dispatch(loadCats());
 
 class Demo extends Component {
     state = {};
     render() {
         return (
-            <Router history={hist}>
-                <ButtonAppBar></ButtonAppBar>
-                {routes}
-            </Router>
+            <Provider store={store}>
+                <Router history={hist}>
+                    <ButtonAppBar></ButtonAppBar>
+                    {routes}
+                </Router>
+            </Provider>
         );
     }
 }

@@ -31,6 +31,9 @@ function ButtonAppBar() {
                 <Nav.Link>
                     <Link to="/users">Users</Link>
                 </Nav.Link>
+                <Nav.Link>
+                    <Link to="/todos">Todos</Link>
+                </Nav.Link>
             </Nav>
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
