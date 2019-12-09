@@ -2,7 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function ButtonAppBar() {
+function ButtonAppBar({ match }) {
+    console.log(match);
     return (
         <Navbar bg="dark" variant="dark" fixed="top">
             <Link to="/">
@@ -26,13 +27,13 @@ function ButtonAppBar() {
                     </Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="/about">About</Link>
+                    <Link to="/todos">Todos</Link>
                 </Nav.Link>
                 <Nav.Link>
                     <Link to="/users">Users</Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="/todos">Todos</Link>
+                    <Link to="/about">About</Link>
                 </Nav.Link>
             </Nav>
             <Navbar.Collapse className="justify-content-end">

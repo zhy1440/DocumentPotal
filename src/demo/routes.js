@@ -14,7 +14,7 @@ export default (
     <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" component={About}></Route>
-        <Route path="/todos" component={TodoApp}></Route>
+        {/* <Route path="/todos" component={TodoApp}></Route> */}
         {/* <Route path="/sandwich" component={SandwichShop}></Route> */}
         <Route path="/users" exact component={Users}></Route>
         <Route path="/users/:id" component={UserDetail}></Route>
