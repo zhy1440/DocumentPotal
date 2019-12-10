@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ButtonAppBar from "./ButtonAppBar";
+import TopBar from "../view/TopBar";
 
 class Home extends Component {
     render() {

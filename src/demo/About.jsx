@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { version, Button } from "antd";
-import ButtonAppBar from "./ButtonAppBar";
+import TopBar from "../view/TopBar";
 
 export default function About() {
     return (

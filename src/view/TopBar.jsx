@@ -1,8 +1,11 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
 
-function ButtonAppBar({ match }) {
+function TopBar({ match }) {
+    const { t } = useTranslation();
+    
     console.log(match);
     return (
         <Navbar bg="dark" variant="dark" fixed="top">
@@ -15,7 +18,7 @@ function ButtonAppBar({ match }) {
                         height="30"
                         className="d-inline-block align-top"
                     />
-                    {" React Bootstrap"}
+                    {t("TITLE")}
                 </Navbar.Brand>
             </Link>
 
@@ -27,7 +30,7 @@ function ButtonAppBar({ match }) {
                     </Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="/todos">Todos</Link>
+                    <Link to="/plan">{t("PLAN")}</Link>
                 </Nav.Link>
                 <Nav.Link>
                     <Link to="/users">Users</Link>
@@ -44,4 +47,4 @@ function ButtonAppBar({ match }) {
         </Navbar>
     );
 }
-export default ButtonAppBar;
+export default TopBar;
