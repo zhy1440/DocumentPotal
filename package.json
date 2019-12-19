@@ -52,6 +52,7 @@
     "i18next-browser-languagedetector": "^4.0.1",
     "i18next-xhr-backend": "^3.2.2",
     "react-fontawesome": "^1.7.1",
-    "react-i18next": "^11.2.5"
+    "react-i18next": "^11.2.5",
+    "swr": "^0.1.14"
   }
 }

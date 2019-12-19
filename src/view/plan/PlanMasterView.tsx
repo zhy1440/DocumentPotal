@@ -5,6 +5,7 @@ import SideMenuPanel from './SideMenuPanel';
 import { Route } from 'react-router-dom';
 
 const { Header, Content, Sider } = Layout;
+
 const PlanMasterView = () => {
     const { t } = useTranslation();
     return <Layout>
@@ -16,8 +17,8 @@ const PlanMasterView = () => {
         }}>
             <Route path="/plan/:secondMenu?" component={SideMenuPanel}></Route>
         </Sider>
-        <Content style={{ paddingLeft: 300}}>
-            <Layout style={{ padding: '0 24px 24px'}}>
+        <Content style={{ paddingLeft: 300 }}>
+            <Layout style={{ padding: '0 24px 24px' }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
                     <Breadcrumb.Item>{t('home')}</Breadcrumb.Item>
                     <Breadcrumb.Item>List</Breadcrumb.Item>
